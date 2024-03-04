@@ -42,7 +42,6 @@ const sectionHero = document.querySelector(".section-hero")
 const obs = new IntersectionObserver(
     function (entries) {
         const ent = entries[0];
-        console.log(ent);
 
         if (ent.isIntersecting === false) {
             document.body.classList.add("sticky");
@@ -78,7 +77,6 @@ photosContainer.addEventListener("click", function (e) {
 
     // change img src
     const activePhoto = document.querySelector(".photo--active")
-    console.log(activePhoto);
     const imgSrc = activePhoto.getAttribute("photo")
 
     const displayImg = document.querySelector("#character-img")
